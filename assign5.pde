@@ -1,4 +1,3 @@
-
 Bar bar;
 Ball[] bList;
 Brick[] aList;
@@ -43,12 +42,14 @@ void draw() {
   background(50, 50, 50);
   noStroke();
 
+println(brickCount);
+
   switch(status) {
 
   case GAME_START:
   printText("BYE BRICK GAME", "Press ENTER to Start ", 240, 60, 20 );
 
-    break;
+  break;
 
   case GAME_PLAYING:
     background(50, 50, 50);
@@ -218,6 +219,7 @@ if (brickCount == 0){
   status=GAME_WIN;
 }}
 
+
 void printText(String A, String B, int numOfY, int SizeA, int SizeB){
 
 textAlign(CENTER);
@@ -258,7 +260,7 @@ void reset() {
   point = 0;
   countBallFrame = 30;
   ballNum = 0;
-
+  brickCount = 50;
  
  
   brickMaker(50,10);
