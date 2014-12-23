@@ -42,8 +42,6 @@ void draw() {
   background(50, 50, 50);
   noStroke();
 
-println(brickCount);
-
   switch(status) {
 
   case GAME_START:
